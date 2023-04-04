@@ -1,7 +1,6 @@
 .header {
   padding: 23px 0 0 0;
   &__top {
-    margin-bottom: 130px;
     .header-nav {
       display: flex;
       align-items: center;
@@ -49,63 +48,75 @@
     }
   }
   &-bottom {
+    overflow: hidden;
+    width: 100%;
     position: relative;
-    .piola {
-      position: absolute;
-      top: -100px;
-      right: 100px;
-      width: 100%;
-      max-width: 840px;
-      height: 690px;
-      background-image: url(../images/png/piola.png);
-    }
-    .barg {
-      img {
-        width: 614.58px;
-        height: 408.46px;
-      }
-      .r {
-        position: absolute;
-        top: -170px;
-        right: -144px;
-        z-index: -2;
-      }
-      .l {
-        transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
-        position: absolute;
-        top: 67px;
-        right: -166px;
-        z-index: -1;
-      }
-    }
     .bottom-wrapper {
-      width: 100%;
-      max-width: 366px;
-      .title {
-        font-family: $sc-font;
-        font-weight: 700;
-        font-size: 200px;
-        line-height: 1;
-        color: $pr-color;
-        span {
-          color: $pr-text-color;
+      display: flex;
+      align-items: center;
+      .bottom-wrapper-item {
+        width: 100%;
+        max-width: 366px;
+
+        .title {
+          font-family: $sc-font;
+          font-weight: 700;
+          font-size: 200px;
+          line-height: 1;
+          color: $pr-color;
+          span {
+            color: $pr-text-color;
+          }
+        }
+        .sub-title {
+          font-family: $pr-font;
+          font-weight: 400;
+          font-size: 50px;
+          line-height: 1;
+          color: #444939;
+          margin-bottom: 21px;
+        }
+        .text {
+          font-family: $pr-font;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #444939;
+          margin-bottom: 21px;
         }
       }
-      .sub-title {
-        font-family: $pr-font;
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 1;
-        color: #444939;
-        margin-bottom: 21px;
-      }
-      .text {
-        font-family: $pr-font;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 140%;
-        color: #444939;
-        margin-bottom: 21px;
+      .barg {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .piola {
+          width: 840px;
+          height: 690px;
+          z-index: 10;
+        }
+        .barg-section {
+          width: 600px;
+          position: absolute;
+          top: 180px;
+          left: auto;
+          right: -350px;
+          z-index: -1;
+          .l {
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            right: 80px;
+            top: -200px;
+          }
+          .r {
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            top: -120px;
+            right: 30px;
+            transform: rotateY(180deg);
+          }
+        }
       }
     }
   }

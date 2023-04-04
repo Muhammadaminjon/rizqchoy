@@ -119,9 +119,6 @@ button {
 .header {
   padding: 23px 0 0 0;
 }
-.header__top {
-  margin-bottom: 130px;
-}
 .header__top .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,51 +188,33 @@ button {
   color: #5a7c52;
 }
 .header-bottom {
+  overflow: hidden;
+  width: 100%;
   position: relative;
 }
-.header-bottom .piola {
-  position: absolute;
-  top: -100px;
-  right: 100px;
-  width: 100%;
-  max-width: 840px;
-  height: 690px;
-  background-image: url(../images/png/piola.png);
-}
-.header-bottom .barg img {
-  width: 614.58px;
-  height: 408.46px;
-}
-.header-bottom .barg .r {
-  position: absolute;
-  top: -170px;
-  right: -144px;
-  z-index: -2;
-}
-.header-bottom .barg .l {
-  -webkit-transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
-      -ms-transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
-          transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
-  position: absolute;
-  top: 67px;
-  right: -166px;
-  z-index: -1;
-}
 .header-bottom .bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-bottom .bottom-wrapper .bottom-wrapper-item {
   width: 100%;
   max-width: 366px;
 }
-.header-bottom .bottom-wrapper .title {
+.header-bottom .bottom-wrapper .bottom-wrapper-item .title {
   font-family: "Arima";
   font-weight: 700;
   font-size: 200px;
   line-height: 1;
   color: #158527;
 }
-.header-bottom .bottom-wrapper .title span {
+.header-bottom .bottom-wrapper .bottom-wrapper-item .title span {
   color: #000;
 }
-.header-bottom .bottom-wrapper .sub-title {
+.header-bottom .bottom-wrapper .bottom-wrapper-item .sub-title {
   font-family: "Display";
   font-weight: 400;
   font-size: 50px;
@@ -243,11 +222,49 @@ button {
   color: #444939;
   margin-bottom: 21px;
 }
-.header-bottom .bottom-wrapper .text {
+.header-bottom .bottom-wrapper .bottom-wrapper-item .text {
   font-family: "Display";
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: #444939;
   margin-bottom: 21px;
+}
+.header-bottom .bottom-wrapper .barg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.header-bottom .bottom-wrapper .barg .piola {
+  width: 840px;
+  height: 690px;
+  z-index: 10;
+}
+.header-bottom .bottom-wrapper .barg .barg-section {
+  width: 600px;
+  position: absolute;
+  top: 180px;
+  left: auto;
+  right: -350px;
+  z-index: -1;
+}
+.header-bottom .bottom-wrapper .barg .barg-section .l {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  right: 80px;
+  top: -200px;
+}
+.header-bottom .bottom-wrapper .barg .barg-section .r {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: -120px;
+  right: 30px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }

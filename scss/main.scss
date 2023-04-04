@@ -7,6 +7,7 @@ $sc-bg-color: #f8fbda;
 $dark-bg-color: #162318;
 $pr-font: "Display";
 $sc-font: "Arima";
+
 *,
 *::before,
 *::after {
@@ -41,6 +42,7 @@ button {
     @content;
   }
 }
+
 .container {
   width: 100%;
   max-width: 1240px;
@@ -86,7 +88,7 @@ button {
     }
   }
 }
-.site-logo{
+.site-logo {
   display: flex;
   width: 150px;
   height: 72px;
