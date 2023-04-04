@@ -1,0 +1,112 @@
+.header {
+  padding: 23px 0 0 0;
+  &__top {
+    margin-bottom: 130px;
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 102px;
+      &-about {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        .blog {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          &-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 61px;
+            height: 61px;
+            border-radius: 50%;
+            background-color: $sc-bg-color;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: $pr-font;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: $pr-text-color;
+            h3 {
+              font-family: $pr-font;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              color: $sc-text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-bottom {
+    position: relative;
+    .piola {
+      position: absolute;
+      top: -100px;
+      right: 100px;
+      width: 100%;
+      max-width: 840px;
+      height: 690px;
+      background-image: url(../images/png/piola.png);
+    }
+    .barg {
+      img {
+        width: 614.58px;
+        height: 408.46px;
+      }
+      .r {
+        position: absolute;
+        top: -170px;
+        right: -144px;
+        z-index: -2;
+      }
+      .l {
+        transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
+        position: absolute;
+        top: 67px;
+        right: -166px;
+        z-index: -1;
+      }
+    }
+    .bottom-wrapper {
+      width: 100%;
+      max-width: 366px;
+      .title {
+        font-family: $sc-font;
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 1;
+        color: $pr-color;
+        span {
+          color: $pr-text-color;
+        }
+      }
+      .sub-title {
+        font-family: $pr-font;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 1;
+        color: #444939;
+        margin-bottom: 21px;
+      }
+      .text {
+        font-family: $pr-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #444939;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
