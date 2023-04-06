@@ -268,3 +268,62 @@ button {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
+
+.reputation {
+  width: 100%;
+  background-color: #fff;
+  padding: 80px 117px;
+}
+.reputation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 100px;
+}
+.reputation-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+}
+.reputation-list__item .title {
+  font-family: "Arima";
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 131px;
+  color: #000;
+}
+.reputation-list__item .title span {
+  color: #158527;
+}
+.reputation-list__item .sub-title {
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.reputation-list .line {
+  width: 173px;
+  height: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}

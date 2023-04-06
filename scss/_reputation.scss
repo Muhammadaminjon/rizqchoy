@@ -1,0 +1,41 @@
+.reputation {
+  width: 100%;
+  background-color: $bg-color;
+  padding: 80px 117px;
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      .title {
+        font-family: $sc-font;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 131px;
+        color: $pr-text-color;
+        span {
+          color: $pr-color;
+        }
+      }
+      .sub-title {
+        font-family: $pr-font;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: rgba($pr-text-color, 0.5);
+      }
+    }
+    .line {
+      width: 173px;
+      height: 0px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      transform: rotate(90deg);
+      flex: none;
+    }
+  }
+}
