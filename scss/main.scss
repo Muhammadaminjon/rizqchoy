@@ -3,7 +3,9 @@ $pr-text-color: #000;
 $sc-text-color: #5a7c52;
 $white-text-color: #fff;
 $bg-color: #fff;
+$pr-bg-color: #FAFAF9;
 $sc-bg-color: #f8fbda;
+$sr-bg-color:#F3F3EE;
 $dark-bg-color: #162318;
 $pr-font: "Display";
 $sc-font: "Arima";
@@ -42,7 +44,6 @@ button {
     @content;
   }
 }
-
 .container {
   width: 100%;
   max-width: 1240px;
@@ -95,3 +96,4 @@ button {
 }
 @import "_header";
 @import "_reputation";
+@import "_products";
