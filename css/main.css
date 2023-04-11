@@ -364,7 +364,7 @@ button {
   line-height: 1;
   color: #158527;
 }
-.products-wrapper .buttons {
+.products-wrapper .title-section .buttons {
   position: absolute;
   top: 11px;
   right: 0;
@@ -376,7 +376,7 @@ button {
           align-items: center;
   gap: 24px;
 }
-.products-wrapper .buttons .button-prev {
+.products-wrapper .title-section .buttons .button-prev {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,11 +391,11 @@ button {
   background: #158527;
   border-radius: 50%;
 }
-.products-wrapper .buttons .button-prev img {
+.products-wrapper .title-section .buttons .button-prev img {
   width: 24px;
   height: 24px;
 }
-.products-wrapper .buttons .button-next {
+.products-wrapper .title-section .buttons .button-next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +411,7 @@ button {
   border-radius: 50%;
   rotate: 180deg;
 }
-.products-wrapper .buttons .button-next img {
+.products-wrapper .title-section .buttons .button-next img {
   width: 24px;
   height: 24px;
 }
@@ -463,4 +463,93 @@ button {
   font-size: 14px;
   line-height: 1;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.about-us-section {
+  width: 100%;
+  background: #fff;
+  padding-bottom: 80px;
+}
+.about-us-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about-us-section-packing {
+  width: 100%;
+  max-width: 548px;
+  height: 496px;
+  background: #5a7c52;
+  border-radius: 87px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about-us-section-packing-title {
+  max-width: 328px;
+  font-family: "Arima";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 81.65px;
+  color: #fff;
+}
+.about-us-section-info {
+  width: 589px;
+  height: 473px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 24px;
+}
+.about-us-section-info-title {
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+}
+.about-us-section-info-title span {
+  font-family: "Arima";
+  font-weight: 700;
+  line-height: 81.65px;
+  color: #158527;
+}
+.about-us-section-info-text {
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 30px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #444939;
+}
+.about-us-section-info-text:first-child {
+  width: 589px;
+}
+.about-us-section-info .site-btn {
+  margin-right: auto;
 }

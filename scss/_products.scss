@@ -23,39 +23,39 @@
           color: $pr-color;
         }
       }
-    }
-    .buttons{
-      position: absolute;
-      top: 11px;
-      right: 0;
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      .button-prev{
+      .buttons {
+        position: absolute;
+        top: 11px;
+        right: 0;
         display: flex;
         align-items: center;
-        justify-content: center;
-        width: 38px;
-        height: 38px;
-        background: $pr-color;
-        border-radius: 50%;
-        img{
-          width: 24px;
-          height: 24px;
+        gap: 24px;
+        .button-prev {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 38px;
+          height: 38px;
+          background: $pr-color;
+          border-radius: 50%;
+          img {
+            width: 24px;
+            height: 24px;
+          }
         }
-      }
-      .button-next{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 38px;
-        height: 38px;
-        background-color: $pr-color;
-        border-radius: 50%;
-        rotate: 180deg;
-        img{
-          width: 24px;
-          height: 24px;
+        .button-next {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 38px;
+          height: 38px;
+          background-color: $pr-color;
+          border-radius: 50%;
+          rotate: 180deg;
+          img {
+            width: 24px;
+            height: 24px;
+          }
         }
       }
     }

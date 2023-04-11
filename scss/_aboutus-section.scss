@@ -1,0 +1,68 @@
+.about-us-section {
+  width: 100%;
+  background: #fff;
+  padding-bottom: 80px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-packing {
+    width: 100%;
+    max-width: 548px;
+    height: 496px;
+    background: $sc-text-color;
+    border-radius: 87px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-title {
+      max-width: 328px;
+      font-family: $sc-font;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 81.65px;
+      color: $white-text-color;
+    }
+  }
+  &-info {
+    width: 589px;
+    height: 473px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    &-title {
+      font-family: $pr-font;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 60px;
+      color: $pr-text-color;
+      span {
+        font-family: $sc-font;
+        font-weight: 700;
+        line-height: 81.65px;
+        color: $pr-color;
+      }
+    }
+    &-text {
+      font-family: $pr-font;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+
+      /* or 30px */
+      display: flex;
+      align-items: center;
+
+      color: #444939;
+      &:first-child {
+        width: 589px;
+        
+      }
+    }
+    .site-btn {
+      margin-right: auto;
+    }
+  }
+}
