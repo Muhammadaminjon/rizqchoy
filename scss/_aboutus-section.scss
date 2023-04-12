@@ -1,6 +1,6 @@
 .about-us-section {
   width: 100%;
-  background: #fff;
+  background: $bg-color;
   padding-bottom: 80px;
   .container {
     display: flex;
@@ -50,12 +50,7 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 30px;
-
-      /* or 30px */
-      display: flex;
-      align-items: center;
-
-      color: #444939;
+      color: rgba($pr-text-color, 0.7);
       &:first-child {
         width: 589px;
         

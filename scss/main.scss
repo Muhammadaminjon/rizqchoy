@@ -70,6 +70,9 @@ button {
   right: -75%;
   z-index: -2;
   transition: 0.3s ease;
+  &.bghh {
+    opacity: 0;
+  }
   .circle {
     position: absolute;
     top: -250px;
@@ -98,3 +101,4 @@ button {
 @import "_reputation";
 @import "_products";
 @import "_aboutus-section";
+@import "_advantages";
