@@ -696,3 +696,83 @@ button {
   background: #f8fbda;
   border-radius: 87px 0;
 }
+
+.guarantee {
+  width: 100%;
+  height: 837px;
+  background: #fff;
+}
+.guarantee .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.guarantee-images-wrapper {
+  position: relative;
+  top: 80px;
+}
+.guarantee-images-wrapper .frame {
+  width: 527px;
+  height: 464px;
+  background: #f8fbda;
+  border-radius: 59px 0px;
+}
+.guarantee-images-wrapper .barg-2 {
+  position: absolute;
+  top: -291px;
+  left: -126px;
+}
+.guarantee-images-wrapper .cup {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 527px;
+  height: 464px;
+}
+.guarantee-text-wrapper {
+  position: relative;
+  top: 62px;
+  width: 100%;
+  max-width: 531px;
+}
+.guarantee-text-wrapper-title {
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  color: #000;
+  margin-bottom: 30px;
+}
+.guarantee-text-wrapper-title span {
+  font-family: "Arima";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  color: #158527;
+}
+.guarantee-text-wrapper .text-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 45px;
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.guarantee-text-wrapper .text-frame .text {
+  width: 100%;
+  max-width: 510px;
+  height: auto;
+}
