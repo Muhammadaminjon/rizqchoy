@@ -439,7 +439,7 @@ button {
 }
 .products-wrapper .product-section .swiper .swiper-wrapper .swiper-slide {
   width: 285px !important;
-  background: #FAFAF9;
+  background: #fafaf9;
   border-radius: 0px 24px;
 }
 .products-wrapper .product-section .swiper .swiper-wrapper .swiper-slide .frame {
@@ -458,7 +458,7 @@ button {
   width: 100%;
   max-width: 237px;
   height: 144px;
-  background: #F3F3EE;
+  background: #f3f3ee;
   border-radius: 12px;
   display: grid;
   place-items: center;
@@ -699,8 +699,9 @@ button {
 
 .guarantee {
   width: 100%;
-  height: 837px;
+  height: 704px;
   background: #fff;
+  padding-bottom: 80px;
 }
 .guarantee .container {
   display: -webkit-box;
@@ -775,4 +776,262 @@ button {
   width: 100%;
   max-width: 510px;
   height: auto;
+}
+
+.choose {
+  padding: 80px 0;
+}
+.choose-title {
+  max-width: 610px;
+  text-align: center;
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  color: #000;
+}
+.choose-title span {
+  font-family: "Arima";
+  font-weight: 700;
+  color: #158527;
+}
+.choose-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  padding: 0 114px;
+}
+.choose-frame {
+  width: 100%;
+}
+.choose-frame .list {
+  width: 100%;
+  max-width: 972px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.choose-frame .list .item-wrapper {
+  width: 100%;
+  max-width: 436px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 100px;
+}
+.choose-frame .list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.choose-frame .list .item:nth-child(2) .image {
+  border-radius: 0px 24px;
+}
+.choose-frame .list .item:nth-child(4) .image {
+  border-radius: 0px 24px;
+}
+.choose-frame .list .item .image {
+  width: 123px;
+  height: 123px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f8fbda;
+  border-radius: 24px 0px;
+  margin-bottom: 20px;
+}
+.choose-frame .list .item .text {
+  width: 100%;
+  max-width: 168px;
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+.choose-frame .list .item .text span {
+  font-family: "Arima";
+  font-weight: 700;
+  color: #158527;
+}
+
+.comments {
+  padding: 80px 0;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.comments .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.comments .comments-wrapper-title {
+  position: relative;
+}
+.comments .comments-wrapper-title .comments-title {
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+}
+.comments .comments-wrapper-title .comments-title span {
+  font-family: "Arima";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 82px;
+  color: #158527;
+}
+.comments .comments-wrapper-title .buttons {
+  position: absolute;
+  top: 22px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+.comments .comments-wrapper-title .buttons .comment-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #158527;
+  border-radius: 50%;
+}
+.comments .comments-wrapper-title .buttons .comment-prev img {
+  width: 24px;
+  height: 24px;
+}
+.comments .comments-wrapper-title .buttons .comment-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: #158527;
+  border-radius: 50%;
+  rotate: 180deg;
+}
+.comments .comments-wrapper-title .buttons .comment-next img {
+  width: 24px;
+  height: 24px;
+}
+.comments .comment .mySwiper {
+  overflow: hidden;
+}
+.comments .comment .mySwiper .swiper-slide {
+  display: block;
+  width: 590px;
+  height: 316px;
+  background: #fafaf9;
+  border-radius: 24px 0px;
+}
+.comments .comment .mySwiper .swiper-slide .frame {
+  padding: 30px;
+}
+.comments .comment .mySwiper .swiper-slide .frame .img-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.comments .comment .mySwiper .swiper-slide .frame .img-frame .text-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.comments .comment .mySwiper .swiper-slide .frame .img-frame .text-frame .title {
+  font-family: "Display";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.64px;
+  color: #000;
+}
+.comments .comment .mySwiper .swiper-slide .frame .img-frame .text-frame .sub-title {
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.comments .comment .mySwiper .swiper-slide .frame .text {
+  margin-top: 18px;
+  width: 100%;
+  max-width: 530px;
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
 }

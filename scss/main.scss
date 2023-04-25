@@ -3,13 +3,12 @@ $pr-text-color: #000;
 $sc-text-color: #5a7c52;
 $white-text-color: #fff;
 $bg-color: #fff;
-$pr-bg-color: #FAFAF9;
+$pr-bg-color: #fafaf9;
 $sc-bg-color: #f8fbda;
-$sr-bg-color:#F3F3EE;
+$sr-bg-color: #f3f3ee;
 $dark-bg-color: #162318;
 $pr-font: "Display";
 $sc-font: "Arima";
-
 *,
 *::before,
 *::after {
@@ -103,3 +102,5 @@ button {
 @import "_aboutus-section";
 @import "_advantages";
 @import "_guarantee";
+@import "_choose";
+@import "_comments";

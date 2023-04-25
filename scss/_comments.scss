@@ -1,0 +1,112 @@
+.comments {
+  padding: 80px 0;
+  background: $bg-color;
+  display: flex;
+  gap: 30px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .comments-wrapper-title {
+    position: relative;
+    .comments-title {
+      font-family: $pr-font;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 60px;
+      color: $pr-text-color;
+      span {
+        font-family: $sc-font;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 82px;
+        color: $pr-color;
+      }
+    }
+    .buttons {
+      position: absolute;
+      top: 22px;
+      right: 0;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      .comment-prev {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        background: $pr-color;
+        border-radius: 50%;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .comment-next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        background-color: $pr-color;
+        border-radius: 50%;
+        rotate: 180deg;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .comment {
+    .mySwiper {
+      overflow: hidden;
+      .swiper-slide {
+        display: block;
+        width: 590px;
+        height: 316px;
+        background: $pr-bg-color;
+        border-radius: 24px 0px;
+        .frame {
+          padding: 30px;
+          .img-frame {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .text-frame {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              .title {
+                font-family: $pr-font;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28.64px;
+                color: $pr-text-color;
+              }
+              .sub-title {
+                font-family: $pr-font;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba($pr-text-color, 0.3);
+              }
+            }
+          }
+          .text {
+            margin-top: 18px;
+            width: 100%;
+            max-width: 530px;
+            font-family:$pr-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba($pr-text-color, 0.6);
+          }
+        }
+      }
+    }
+  }
+}
