@@ -1160,6 +1160,12 @@ button {
   border-radius: 12px 0;
   background-color: #fafaf9;
   outline: none;
+  -moz-appearance: textfield;
+}
+.offer-wrapper .input-frame form input::-webkit-outer-spin-button,
+.offer-wrapper .input-frame form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .offer-wrapper .input-frame form textarea {
   width: 100%;

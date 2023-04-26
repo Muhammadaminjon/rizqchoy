@@ -56,6 +56,12 @@
           border-radius: 12px 0;
           background-color: $pr-bg-color;
           outline: none;
+          -moz-appearance: textfield;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
         }
         textarea {
           width: 100%;
