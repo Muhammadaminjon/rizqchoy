@@ -37,3 +37,7 @@ window.addEventListener("scroll", (e) => {
     nav.classList.remove("navbar");
   }
 });
+
+marker = new google.maps.Marker({
+  icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+});
