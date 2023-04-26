@@ -291,6 +291,52 @@ button {
           transform: rotateY(180deg);
 }
 
+.footer {
+  padding: 35px 0;
+}
+.footer .foot {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer .foot .site-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .foot .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .foot .footer-wrapper p {
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer .foot .footer-wrapper p a {
+  color: #158527;
+}
+
 .reputation {
   width: 100%;
   background-color: #fff;

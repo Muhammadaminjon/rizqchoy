@@ -1,0 +1,30 @@
+.footer {
+    padding: 35px 0;
+  .foot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .site-logo{
+        display: flex;
+    }
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-left: auto;
+        margin-right: auto;
+      p {
+        font-family: $pr-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba($pr-text-color, 0.5);
+        a{
+            color: $pr-color;
+        }
+      }
+    }
+  }
+}
