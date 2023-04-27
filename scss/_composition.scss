@@ -1,0 +1,106 @@
+.composition {
+  background: $bg-color;
+  padding-bottom: 80px;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .r-title {
+      width: 100%;
+      max-width: 610px;
+      font-family: $pr-font;
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 72px;
+      color: $pr-text-color;
+    }
+    .r-text {
+      width: 549px;
+      font-family: $pr-font;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $third-text-color;
+    }
+    .r-wrapper {
+      .r-list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 24px;
+        margin-bottom: 24px;
+        .r-item {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          #circle {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $sc-bg-color;
+            border-radius: 50%;
+          }
+          .r-item-title {
+            max-width: 389px;
+            font-family: $pr-font;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $pr-text-color;
+            span {
+              font-family: $sc-font;
+              font-weight: 700;
+              color: $pr-color;
+            }
+          }
+        }
+      }
+      .r-frame {
+        a {
+          text-align: center;
+          width: 100%;
+          max-width: 176px;
+          height: 49px;
+        }
+        .r-frame-title {
+          font-family: $pr-font;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $third-text-color;
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+  .left-section {
+    .top-img {
+      width: 548px;
+      height: 496px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $sr-bg-color;
+      border-radius: 87px 0px;
+      margin-bottom: 20px;
+      img{
+        width: 438px;
+        height: 304px;
+      }
+    }
+    .bottom-imgs{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+  }
+}

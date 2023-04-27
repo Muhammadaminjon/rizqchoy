@@ -57,7 +57,7 @@ button {
   padding: 14px 59px;
   background-color: #158527;
   border-radius: 11px 0px;
-  color: #fff;
+  color: #FFFFFF;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -200,14 +200,14 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 21px;
-  color: #000;
+  color: #000000;
 }
 .header__top .header-nav-about .blog-text h3 {
   font-family: "Display";
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #5a7c52;
+  color: #5A7C52;
 }
 .header-bottom {
   overflow: hidden;
@@ -234,7 +234,7 @@ button {
   color: #158527;
 }
 .header-bottom .bottom-wrapper .bottom-wrapper-item .title span {
-  color: #000;
+  color: #000000;
 }
 .header-bottom .bottom-wrapper .bottom-wrapper-item .sub-title {
   font-family: "Display";
@@ -339,7 +339,7 @@ button {
 
 .reputation {
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 80px 117px;
 }
 .reputation-list {
@@ -371,7 +371,7 @@ button {
   font-weight: 400;
   font-size: 80px;
   line-height: 131px;
-  color: #000;
+  color: #000000;
 }
 .reputation-list__item .title span {
   color: #158527;
@@ -423,7 +423,7 @@ button {
   font-weight: 400;
   font-size: 50px;
   line-height: 60px;
-  color: #000;
+  color: #000000;
 }
 .products-wrapper .title-section .title span {
   font-family: "Arima";
@@ -504,7 +504,7 @@ button {
   width: 100%;
   max-width: 237px;
   height: 144px;
-  background: #f3f3ee;
+  background: #F3F3EE;
   border-radius: 12px;
   display: grid;
   place-items: center;
@@ -522,7 +522,7 @@ button {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
 }
 .products-wrapper .product-section .swiper .swiper-wrapper .swiper-slide .frame .text {
   font-family: "Display";
@@ -535,7 +535,7 @@ button {
 
 .about-us-section {
   width: 100%;
-  background: #fff;
+  background: #ffffff;
   padding-bottom: 80px;
 }
 .about-us-section .container {
@@ -553,7 +553,7 @@ button {
   width: 100%;
   max-width: 548px;
   height: 496px;
-  background: #5a7c52;
+  background: #5A7C52;
   border-radius: 87px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,7 +571,7 @@ button {
   font-weight: 700;
   font-size: 50px;
   line-height: 81.65px;
-  color: #fff;
+  color: #FFFFFF;
 }
 .about-us-section-info {
   width: 589px;
@@ -590,7 +590,7 @@ button {
   font-weight: 400;
   font-size: 50px;
   line-height: 60px;
-  color: #000;
+  color: #000000;
 }
 .about-us-section-info-title span {
   font-family: "Arima";
@@ -652,7 +652,7 @@ button {
   font-weight: 400;
   font-size: 50px;
   line-height: 62.5px;
-  color: #000;
+  color: #000000;
 }
 .advantages-infos__info .title span {
   font-family: "Arima";
@@ -713,7 +713,7 @@ button {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #000;
+  color: #000000;
 }
 .advantages-image {
   display: -webkit-box;
@@ -743,7 +743,7 @@ button {
 .guarantee {
   width: 100%;
   height: 704px;
-  background: #fff;
+  background: #ffffff;
   padding-bottom: 80px;
 }
 .guarantee .container {
@@ -790,7 +790,7 @@ button {
   font-weight: 400;
   font-size: 50px;
   line-height: 62px;
-  color: #000;
+  color: #000000;
   margin-bottom: 30px;
 }
 .guarantee-text-wrapper-title span {
@@ -831,7 +831,7 @@ button {
   font-weight: 400;
   font-size: 50px;
   line-height: 125%;
-  color: #000;
+  color: #000000;
 }
 .choose-title span {
   font-family: "Arima";
@@ -928,7 +928,7 @@ button {
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
 }
 .choose-frame .list .item .text span {
   font-family: "Arima";
@@ -938,7 +938,7 @@ button {
 
 .comments {
   padding: 80px 0;
-  background: #fff;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,7 +962,7 @@ button {
   font-weight: 400;
   font-size: 50px;
   line-height: 60px;
-  color: #000;
+  color: #000000;
 }
 .comments .comments-wrapper-title .comments-title span {
   font-family: "Arima";
@@ -1059,7 +1059,7 @@ button {
   font-weight: 500;
   font-size: 24px;
   line-height: 28.64px;
-  color: #000;
+  color: #000000;
 }
 .comments .comment .mySwiper .swiper-slide .frame .img-frame .text-frame .sub-title {
   font-family: "Display";
@@ -1082,7 +1082,7 @@ button {
 .offer {
   padding-bottom: 80px;
   width: 100%;
-  background: #fff;
+  background: #ffffff;
 }
 .offer .container {
   display: -webkit-box;
@@ -1119,7 +1119,7 @@ button {
   font-weight: 400;
   font-size: 50px;
   line-height: 62.5px;
-  color: #000;
+  color: #000000;
   margin-bottom: 28px;
 }
 .offer-wrapper .title-frame .text {
@@ -1183,14 +1183,14 @@ button {
 }
 
 .header2 {
-  background: #fff;
+  background: #ffffff;
   padding: 28px 0 73px 0;
 }
 
 .guarantee2 {
   width: 100%;
   height: 600px;
-  background: #fff;
+  background: #ffffff;
 }
 .guarantee2 .container {
   display: -webkit-box;
@@ -1279,7 +1279,7 @@ button {
   font-weight: 500;
   font-size: 50px;
   line-height: 60px;
-  color: #000;
+  color: #000000;
 }
 .choose2-title span {
   font-family: "Arima";
@@ -1388,10 +1388,149 @@ button {
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
 }
 .choose2-frame .list .item .text span {
   font-family: "Arima";
   font-weight: 700;
   color: #158527;
+}
+
+.composition {
+  background: #ffffff;
+  padding-bottom: 80px;
+}
+.composition-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.composition .right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.composition .right-section .r-title {
+  width: 100%;
+  max-width: 610px;
+  font-family: "Display";
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  color: #000000;
+}
+.composition .right-section .r-text {
+  width: 549px;
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #444939;
+}
+.composition .right-section .r-wrapper .r-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.composition .right-section .r-wrapper .r-list .r-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+}
+.composition .right-section .r-wrapper .r-list .r-item #circle {
+  width: 28px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f8fbda;
+  border-radius: 50%;
+}
+.composition .right-section .r-wrapper .r-list .r-item .r-item-title {
+  max-width: 389px;
+  font-family: "Display";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.composition .right-section .r-wrapper .r-list .r-item .r-item-title span {
+  font-family: "Arima";
+  font-weight: 700;
+  color: #158527;
+}
+.composition .right-section .r-wrapper .r-frame a {
+  text-align: center;
+  width: 100%;
+  max-width: 176px;
+  height: 49px;
+}
+.composition .right-section .r-wrapper .r-frame .r-frame-title {
+  font-family: "Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444939;
+  margin-bottom: 18px;
+}
+.composition .left-section .top-img {
+  width: 548px;
+  height: 496px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F3F3EE;
+  border-radius: 87px 0px;
+  margin-bottom: 20px;
+}
+.composition .left-section .top-img img {
+  width: 438px;
+  height: 304px;
+}
+.composition .left-section .bottom-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }

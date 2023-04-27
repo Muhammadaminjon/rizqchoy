@@ -1,12 +1,12 @@
 $pr-color: #158527;
-$pr-text-color: #000;
-$sc-text-color: #5a7c52;
+$pr-text-color: #000000;
+$sc-text-color: #5A7C52;
 $third-text-color: #444939;
-$white-text-color: #fff;
-$bg-color: #fff;
+$white-text-color: #FFFFFF;
+$bg-color: #ffffff;
 $pr-bg-color: #fafaf9;
 $sc-bg-color: #f8fbda;
-$sr-bg-color: #f3f3ee;
+$sr-bg-color: #F3F3EE;
 $dark-bg-color: #162318;
 $pr-font: "Display";
 $sc-font: "Arima";
@@ -51,7 +51,7 @@ button {
   padding: 0 20px;
 }
 .site-btn {
-  font-family: "Display";
+  font-family: $pr-font;
   font-weight: 500;
   display: inline-block;
   padding: 14px 59px;
