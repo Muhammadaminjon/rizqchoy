@@ -1,3 +1,10 @@
+const body = document.querySelector("body");
+const btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+  body.classList.toggle("dark");
+});
+
+
 // main products section swiper js
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
@@ -10,7 +17,7 @@ const swiper = new Swiper(".swiper", {
 });
 // main comments section swiper js
 const mySwiper = new Swiper(".mySwiper", {
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   speed: 800,
   spaceBetween: 20,
   navigation: {
@@ -19,9 +26,9 @@ const mySwiper = new Swiper(".mySwiper", {
   },
 });
 
+
 const scroll = document.querySelector(".bg-circle");
 const nav = document.getElementById("navbar");
-
 window.addEventListener("scroll", (e) => {
   if (window.scrollY >= 300) {
     scroll.classList.add("bghh");
@@ -29,15 +36,10 @@ window.addEventListener("scroll", (e) => {
     scroll.classList.remove("bghh");
   }
 });
-
 window.addEventListener("scroll", (e) => {
   if (window.scrollY >= 100) {
     nav.classList.add("navbar");
   } else {
     nav.classList.remove("navbar");
   }
-});
-
-marker = new google.maps.Marker({
-  icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
 });

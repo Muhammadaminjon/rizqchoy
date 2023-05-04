@@ -1,6 +1,6 @@
 .reputation {
   width: 100%;
-  background-color: $bg-color;
+  background-color: var(--bg-color);
   padding: 80px 117px;
   &-list {
     display: flex;
@@ -17,7 +17,7 @@
         font-weight: 400;
         font-size: 80px;
         line-height: 131px;
-        color: $pr-text-color;
+        color: var(--text-color);
         span {
           color: $pr-color;
         }
@@ -27,7 +27,7 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 29px;
-        color: rgba($pr-text-color, 0.5);
+        color: rgba(var(--text-color) 0.5);
       }
     }
     .line {
@@ -40,7 +40,7 @@
   }
 }
 .products {
-  background-color: #fff;
+  background-color: var(--bg-color);
   padding: 80px 0px;
   &-wrapper {
     display: flex;
@@ -55,7 +55,7 @@
         font-weight: 400;
         font-size: 50px;
         line-height: 60px;
-        color: $pr-text-color;
+        color: var(--text-color);
         span {
           font-family: $sc-font;
           font-weight: 700;
@@ -133,7 +133,7 @@
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 24px;
-                color: $pr-text-color;
+                color: var(--text-color);
               }
               .text {
                 font-family: $pr-font;
@@ -141,7 +141,7 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 1;
-                color: rgba($pr-text-color, 0.5);
+                color: rgba(var(--text-color) 0.5);
               }
             }
           }
@@ -152,7 +152,7 @@
 }
 .about-us-section {
   width: 100%;
-  background: $bg-color;
+  background: var(--bg-color);
   padding-bottom: 80px;
   .container {
     display: flex;
@@ -188,7 +188,7 @@
       font-weight: 400;
       font-size: 50px;
       line-height: 60px;
-      color: $pr-text-color;
+      color: var(--text-color);
       span {
         font-family: $sc-font;
         font-weight: 700;
@@ -201,7 +201,7 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 30px;
-      color: rgba($pr-text-color, 0.7);
+      color: rgba(var(--text-color) 0.7);
       &:first-child {
         width: 589px;
       }
@@ -232,7 +232,7 @@
         font-weight: 400;
         font-size: 50px;
         line-height: 62.5px;
-        color: $pr-text-color;
+        color: var(--text-color);
         span {
           font-family: $sc-font;
           font-weight: 700;
@@ -245,7 +245,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1;
-        color: rgba($pr-text-color, 0.7);
+        color: rgba(var(--text-color) 0.7);
       }
     }
     &__info-text {
@@ -280,7 +280,7 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 150%;
-            color: $pr-text-color;
+            color: var(--text-color);
           }
         }
       }
@@ -307,7 +307,7 @@
 .guarantee {
   width: 100%;
   height: 704px;
-  background: $bg-color;
+  background: var(--bg-color);
   padding-bottom: 80px;
   .container {
     display: flex;
@@ -346,7 +346,7 @@
       font-weight: 400;
       font-size: 50px;
       line-height: 62px;
-      color: $pr-text-color;
+      color: var(--text-color);
       margin-bottom: 30px;
       span {
         font-family: $sc-font;
@@ -364,7 +364,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      color: rgba($pr-text-color, 0.7);
+      color: rgba(var(--text-color) 0.7);
       .text {
         width: 100%;
         max-width: 510px;
@@ -382,7 +382,7 @@
     font-weight: 400;
     font-size: 50px;
     line-height: 125%;
-    color: $pr-text-color;
+    color: var(--text-color);
     span {
       font-family: $sc-font;
       font-weight: 700;
@@ -442,7 +442,7 @@
           font-weight: 400;
           font-size: 24px;
           line-height: 30px;
-          color: $pr-text-color;
+          color: var(--text-color);
           span {
             font-family: $sc-font;
             font-weight: 700;
@@ -455,7 +455,7 @@
 }
 .comments {
   padding: 80px 0;
-  background: $bg-color;
+  background: var(--bg-color);
   display: flex;
   gap: 30px;
   .container {
@@ -470,7 +470,7 @@
       font-weight: 400;
       font-size: 50px;
       line-height: 60px;
-      color: $pr-text-color;
+      color: var(--text-color);
       span {
         font-family: $sc-font;
         font-weight: 700;
@@ -539,14 +539,14 @@
                 font-weight: 500;
                 font-size: 24px;
                 line-height: 28.64px;
-                color: $pr-text-color;
+                color: var(--text-color);
               }
               .sub-title {
                 font-family: $pr-font;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 17px;
-                color: rgba($pr-text-color, 0.3);
+                color: rgba(var(--text-color) 0.3);
               }
             }
           }
@@ -558,7 +558,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
-            color: rgba($pr-text-color, 0.6);
+            color: rgba(var(--text-color) 0.6);
           }
         }
       }
@@ -568,7 +568,7 @@
 .offer {
   padding-bottom: 80px;
   width: 100%;
-  background: $bg-color;
+  background: var(--bg-color);
   .container {
     display: flex;
     align-items: center;
@@ -591,7 +591,7 @@
         font-weight: 400;
         font-size: 50px;
         line-height: 62.5px;
-        color: $pr-text-color;
+        color: var(--text-color);
         margin-bottom: 28px;
       }
       .text {
@@ -601,7 +601,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: rgba($pr-text-color, 0.8);
+        color: rgba(var(--text-color) 0.8);
       }
     }
     .input-frame {

@@ -1,15 +1,37 @@
 $pr-color: #158527;
-$pr-text-color: #000000;
-$sc-text-color: #5A7C52;
+$sc-text-color: #5a7c52;
 $third-text-color: #444939;
-$white-text-color: #FFFFFF;
-$bg-color: #ffffff;
+$white-text-color: #ffffff;
 $pr-bg-color: #fafaf9;
 $sc-bg-color: #f8fbda;
-$sr-bg-color: #F3F3EE;
+$sr-bg-color: #f3f3ee;
 $dark-bg-color: #162318;
 $pr-font: "Display";
 $sc-font: "Arima";
+
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --kir: url(../images/png/kir.png);
+  --sc-color: #f8fbda;
+  --third-text-color: #444939;
+}
+.dark {
+  --bg-color: #162318;
+  --text-color: #fff;
+  --kir: #1C2C1F;
+  --sc-color: #158527;
+  --third-text-color: #fff;
+
+}
+.black {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  place-items: center;
+  background: var(--bg-color);
+}
+
 *,
 *::before,
 *::after {
@@ -18,6 +40,7 @@ $sc-font: "Arima";
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  transition: all 0.3s ease;
 }
 html {
   user-select: none;
@@ -27,7 +50,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  background: url(../images/png/kir.png);
+  background: var(--kir);
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -49,6 +72,16 @@ button {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+}
+#btn{
+  width: 92px;
+  height: 92px;
+  position: fixed;
+  background: #000;
+  top: 40%;
+  right: 1%;
+  z-index: 9999;
+  border-radius: 50%;
 }
 .site-btn {
   font-family: $pr-font;
@@ -76,7 +109,7 @@ button {
   .circle {
     position: absolute;
     top: -250px;
-    background: #f9fcdb;
+    background: var(--sc-color);
     width: 1300px;
     height: 1700px;
     border-radius: 35%;

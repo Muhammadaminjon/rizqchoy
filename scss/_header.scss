@@ -1,7 +1,6 @@
 .header {
   padding: 23px 0 0 0;
-  // background: $bg-color;
-  &__top {
+  &__top {  
     top: -100px;
     &.navbar {
       width: 100%;
@@ -9,25 +8,39 @@
       position: fixed;
       top: 0;
       left: 0;
-      background: #fff;
+      background: var(--bg-color);
       transition: all 0.5s ease;
       z-index: 20;
       padding-top: 10px;
-      box-shadow: 1px 0px 20px 5px #444939;
+      box-shadow: 1px 0px 20px 5px;
       margin-bottom: 70px;
+      @include media(375px){
+        height: 200px;
+      }
     }
     .header-nav {
       display: flex;
       align-items: center;
       gap: 102px;
+      @include media(375px){
+        flex-direction: column;
+        gap: 0;
+      }
       &-about {
         display: flex;
         align-items: center;
         gap: 80px;
+        @include media(375px){
+          display: flex;
+          gap: 36px;
+        }
         .blog {
           display: flex;
           align-items: center;
           gap: 15px;
+          @include media(375px){
+            gap: 8px;
+          }
           &-img {
             display: flex;
             align-items: center;
@@ -35,10 +48,14 @@
             width: 61px;
             height: 61px;
             border-radius: 50%;
-            background-color: $sc-bg-color;
+            background-color: var(--sc-color);
             img {
-              width: 24px;
-              height: 24px;
+              width: 12.59px;
+              height: 12.59px;
+            }
+            @include media(375px){
+              width: 32px;
+              height: 32px;
             }
           }
           &-text {
@@ -49,7 +66,7 @@
             font-weight: 600;
             font-size: 18px;
             line-height: 21px;
-            color: $pr-text-color;
+            color: var(--text-color);
             h3 {
               font-family: $pr-font;
               font-weight: 400;
@@ -79,8 +96,10 @@
           font-size: 200px;
           line-height: 1;
           color: $pr-color;
+          -webkit-text-stroke: 1px #000;
           span {
-            color: $pr-text-color;
+          -webkit-text-stroke: 0px;
+          color: var(--text-color);
           }
         }
         .sub-title {
@@ -88,7 +107,7 @@
           font-weight: 400;
           font-size: 50px;
           line-height: 1;
-          color: #444939;
+          color:  var(--third-text-color);
           margin-bottom: 21px;
         }
         .text {
@@ -96,7 +115,7 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 140%;
-          color: #444939;
+          color: var(--third-text-color);
           margin-bottom: 21px;
         }
       }

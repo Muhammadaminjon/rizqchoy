@@ -1,5 +1,5 @@
 .composition {
-  background: $bg-color;
+  background: var(--bg-color);
   padding-bottom: 80px;
   &-wrapper {
     display: flex;
@@ -17,7 +17,7 @@
       font-weight: 500;
       font-size: 60px;
       line-height: 72px;
-      color: $pr-text-color;
+      color: var(--text-color);
     }
     .r-text {
       width: 549px;
@@ -54,7 +54,7 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 27px;
-            color: $pr-text-color;
+            color: var(--text-color);
             span {
               font-family: $sc-font;
               font-weight: 700;
@@ -92,15 +92,34 @@
       background: $sr-bg-color;
       border-radius: 87px 0px;
       margin-bottom: 20px;
-      img{
+      img {
         width: 438px;
         height: 304px;
       }
     }
-    .bottom-imgs{
+    .bottom-imgs {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .left {
+        width: 264px;
+        height: 253px;
         display: flex;
         align-items: center;
-        gap: 20px;
+        justify-content: center;
+        background: $sr-bg-color;
+        border-radius: 0px 60px;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 264px;
+        height: 253px;
+        background: $sr-bg-color;
+        border-radius: 60px 0px;
+
+      }
     }
   }
 }

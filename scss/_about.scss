@@ -1,11 +1,11 @@
 .header2 {
-  background: $bg-color;
+  background: var(--bg-color);
   padding: 28px 0 73px 0;
 }
 .guarantee2 {
   width: 100%;
   height: 600px;
-  background: $bg-color;
+  background: var(--bg-color);
   .container {
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 60px;
-    color: $pr-text-color;
+    color: var(--text-color);
     span {
       font-family: $sc-font;
       font-weight: 700;
@@ -155,7 +155,7 @@
           font-weight: 400;
           font-size: 24px;
           line-height: 30px;
-          color: $pr-text-color;
+          color: var(--text-color);
           span {
             font-family: $sc-font;
             font-weight: 700;
