@@ -4,14 +4,18 @@
   --kir: url(../images/png/kir.png);
   --sc-color: #f8fbda;
   --third-text-color: #444939;
+  --mode: #000;
+  --mode-img: url(../images/svg/Moon.svg);
 }
 
 .dark {
   --bg-color: #162318;
   --text-color: #fff;
-  --kir: #1C2C1F;
-  --sc-color: #158527;
+  --kir: #1c2c1f;
+  --sc-color: #293d2d;
   --third-text-color: #fff;
+  --mode: #f8fbda;
+  --mode-img: url(../images/svg/Sun.svg);
 }
 
 .black {
@@ -78,10 +82,16 @@ button {
 }
 
 #btn {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   width: 92px;
   height: 92px;
   position: fixed;
-  background: #000;
+  background: var(--mode);
+  background-image: var(--mode-img);
+  background-repeat: no-repeat;
+  background-position: center;
   top: 40%;
   right: 1%;
   z-index: 9999;
@@ -160,9 +170,6 @@ button {
 .header {
   padding: 23px 0 0 0;
 }
-.header__top {
-  top: -100px;
-}
 .header__top.navbar {
   width: 100%;
   height: 100px;
@@ -193,13 +200,27 @@ button {
           align-items: center;
   gap: 102px;
 }
+@media (max-width: 810px) {
+  .header__top .header-nav {
+    gap: 40px;
+  }
+}
+@media (max-width: 530px) {
+  .header__top .header-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
 @media (max-width: 393px) {
   .header__top .header-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 0;
+    gap: 20px;
   }
 }
 .header__top .header-nav-about {
@@ -211,15 +232,19 @@ button {
           align-items: center;
   gap: 80px;
 }
+@media (max-width: 810px) {
+  .header__top .header-nav-about {
+    gap: 30px;
+  }
+}
 @media (max-width: 393px) {
   .header__top .header-nav-about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     gap: 36px;
   }
 }
 .header__top .header-nav-about .blog {
+  width: 100%;
+  max-width: 235px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +252,12 @@ button {
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
+}
+@media (max-width: 700px) {
+  .header__top .header-nav-about .blog {
+    width: 100%;
+    max-width: 178px;
+  }
 }
 @media (max-width: 393px) {
   .header__top .header-nav-about .blog {
@@ -243,7 +274,8 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 61px;
+  width: 100%;
+  max-width: 61px;
   height: 61px;
   border-radius: 50%;
   background-color: var(--sc-color);
@@ -252,15 +284,27 @@ button {
   width: 24px;
   height: 24px;
 }
+@media (max-width: 700px) {
+  .header__top .header-nav-about .blog-img img {
+    width: 20px;
+    height: 20px;
+  }
+}
 @media (max-width: 393px) {
   .header__top .header-nav-about .blog-img img {
     width: 12.59px;
     height: 12.59px;
   }
 }
+@media (max-width: 700px) {
+  .header__top .header-nav-about .blog-img {
+    max-width: 50px;
+    height: 50px;
+  }
+}
 @media (max-width: 393px) {
   .header__top .header-nav-about .blog-img {
-    width: 32px;
+    max-width: 32px;
     height: 32px;
   }
 }
@@ -273,11 +317,6 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 8px;
-  font-family: "Display";
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  color: var(--text-color);
 }
 .header__top .header-nav-about .blog-text h3 {
   font-family: "Display";
@@ -285,6 +324,28 @@ button {
   font-size: 16px;
   line-height: 19px;
   color: #5a7c52;
+}
+@media (max-width: 700px) {
+  .header__top .header-nav-about .blog-text h3 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1;
+  }
+}
+.header__top .header-nav-about .blog-text p {
+  font-family: "Display";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+@media (max-width: 700px) {
+  .header__top .header-nav-about .blog-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
 }
 .header-bottom {
   overflow: hidden;

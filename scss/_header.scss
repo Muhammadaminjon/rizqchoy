@@ -1,7 +1,6 @@
 .header {
   padding: 23px 0 0 0;
   &__top {  
-    top: -100px;
     &.navbar {
       width: 100%;
       height: 100px;
@@ -14,6 +13,9 @@
       padding-top: 10px;
       box-shadow: 1px 0px 20px 5px;
       margin-bottom: 70px;
+      @include media(810px){
+
+      }
       @include media(393px){
         height: 200px;
       }
@@ -22,22 +24,37 @@
       display: flex;
       align-items: center;
       gap: 102px;
+      @include media(810px){
+        gap: 40px;
+      }
+      @include media(530px){
+        flex-direction: column;
+        gap: 30px;
+      }
       @include media(393px){
         flex-direction: column;
-        gap: 0;
+        gap: 20px;
       }
       &-about {
         display: flex;
         align-items: center;
         gap: 80px;
+        @include media(810px){
+          gap: 30px;
+        }
         @include media(393px){
-          display: flex;
           gap: 36px;
         }
         .blog {
+          width: 100%;
+          max-width: 235px;
           display: flex;
           align-items: center;
           gap: 15px;
+          @include media(700px){
+            width: 100%;
+            max-width: 178px;
+          }
           @include media(393px){
             gap: 8px;
           }
@@ -45,20 +62,29 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 61px;
+            width: 100%;
+            max-width: 61px;
             height: 61px;
             border-radius: 50%;
             background-color: var(--sc-color);
             img {
               width: 24px;
               height: 24px;
+              @include media(700px){
+                width: 20px;
+                height: 20px;
+              }
               @include media(393px){
                 width: 12.59px;
                 height: 12.59px;
               }
             }
+            @include media(700px){
+              max-width: 50px;
+              height: 50px;
+            }
             @include media(393px){
-              width: 32px;
+              max-width: 32px;
               height: 32px;
             }
           }
@@ -66,17 +92,30 @@
             display: flex;
             flex-direction: column;
             gap: 8px;
-            font-family: $pr-font;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 21px;
-            color: var(--text-color);
             h3 {
               font-family: $pr-font;
               font-weight: 400;
               font-size: 16px;
               line-height: 19px;
               color: $sc-text-color;
+              @include media(700px){
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 1;
+              }
+            }
+            p{
+              font-family: $pr-font;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: var(--text-color);
+              @include media(700px){
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1;
+                letter-spacing: 1px;
+              }
             }
           }
         }

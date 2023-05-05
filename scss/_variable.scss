@@ -15,14 +15,17 @@ $sc-font: "Arima";
   --kir: url(../images/png/kir.png);
   --sc-color: #f8fbda;
   --third-text-color: #444939;
+  --mode: #000;
+  --mode-img: url(../images/svg/Moon.svg);
 }
 .dark {
   --bg-color: #162318;
   --text-color: #fff;
-  --kir: #1C2C1F;
-  --sc-color: #158527;
+  --kir: #1c2c1f;
+  --sc-color: #293d2d;
   --third-text-color: #fff;
-
+  --mode: #f8fbda;
+  --mode-img: url(../images/svg/Sun.svg);
 }
 .black {
   width: 500px;
@@ -73,11 +76,15 @@ button {
   margin: 0 auto;
   padding: 0 20px;
 }
-#btn{
+#btn {
+  transition: all 0.5s ease;
   width: 92px;
   height: 92px;
   position: fixed;
-  background: #000;
+  background: var(--mode);
+  background-image: var(--mode-img);
+  background-repeat: no-repeat;
+  background-position: center;
   top: 40%;
   right: 1%;
   z-index: 9999;
