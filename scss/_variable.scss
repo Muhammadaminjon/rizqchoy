@@ -27,14 +27,11 @@ $sc-font: "Arima";
   --mode: #f8fbda;
   --mode-img: url(../images/svg/Sun.svg);
 }
-.black {
-  width: 500px;
-  height: 500px;
-  display: grid;
-  place-items: center;
-  background: var(--bg-color);
+@mixin media($w) {
+  @media (max-width: $w) {
+    @content;
+  }
 }
-
 *,
 *::before,
 *::after {
@@ -65,16 +62,19 @@ button {
   border: none;
   cursor: pointer;
 }
-@mixin media($w) {
-  @media (max-width: $w) {
-    @content;
-  }
-}
+
 .container {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.black {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  place-items: center;
+  background: var(--bg-color);
 }
 #btn {
   transition: all 0.5s ease;
@@ -83,12 +83,31 @@ button {
   position: fixed;
   background: var(--mode);
   background-image: var(--mode-img);
+  background-size: cover 100%;
   background-repeat: no-repeat;
   background-position: center;
   top: 40%;
   right: 1%;
   z-index: 9999;
   border-radius: 50%;
+  &:hover {
+    transform: translateY(-10px);
+  }
+  @include media(1000px) {
+    width: 70px;
+    height: 70px;
+    background-size: 50%;
+  }
+  @include media(500px) {
+    width: 60px;
+    height: 60px;
+    background-size: 40%;
+  }
+  @include media(375px) {
+    width: 40px;
+    height: 40px;
+    background-size: 20px;
+  }
 }
 .site-btn {
   font-family: $pr-font;
