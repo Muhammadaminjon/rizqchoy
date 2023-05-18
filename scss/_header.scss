@@ -5,19 +5,22 @@
       width: 100%;
       height: 100px;
       position: fixed;
+      padding-top: 15px;
       top: 0;
       left: 0;
       background: var(--bg-color);
       transition: all 0.5s ease;
       z-index: 20;
-      padding-top: 10px;
-      box-shadow: 0px 0px 500px 10px;
+      box-shadow: 0px 0px 50px 5px;
       margin-bottom: 70px;
       @include media(675px) {
-        height: 200px;
+        .site-logo {
+          display: none;
+        }
       }
       @include media(500px) {
-        height: 150px;
+        height: 70px;
+        padding-top: 20px;
       }
     }
     .header-nav {
@@ -110,13 +113,13 @@
   &-bottom {
     width: 100%;
     position: relative;
-    @include media(840px){
+    @include media(840px) {
       margin-bottom: 30px;
     }
     .bottom-wrapper {
       display: flex;
       align-items: center;
-      @include media(840px){
+      @include media(840px) {
         flex-direction: column-reverse;
       }
       .bottom-wrapper-item {
@@ -124,7 +127,7 @@
         max-width: 366px;
         @include media(840px) {
           text-align: center;
-          & .site-btn{
+          & .site-btn {
             width: 100%;
           }
         }
@@ -177,8 +180,7 @@
           line-height: 140%;
           color: var(--third-text-color);
           margin-bottom: 21px;
-          @include media(375px){
-            width: 334px;
+          @include media(375px) {
             margin-bottom: 24px;
           }
         }
@@ -187,9 +189,9 @@
         display: flex;
         align-items: center;
         position: relative;
-@include media(700px){
-  top: 50px;
-}
+        @include media(700px) {
+          top: 50px;
+        }
         .piola {
           width: 840px;
           height: 690px;
@@ -198,19 +200,19 @@
             width: 640px;
             height: 540px;
           }
-          @include media(960px){
+          @include media(960px) {
             width: 590px;
             height: 500px;
           }
-          @include media(900px){
+          @include media(900px) {
             width: 490px;
             height: 440px;
           }
-          @include media(840px){
+          @include media(840px) {
             width: 740px;
             height: 590px;
           }
-          @include media(650px){
+          @include media(650px) {
             width: 440px;
             height: 350px;
           }
@@ -225,10 +227,10 @@
           left: auto;
           right: -40%;
           z-index: -1;
-          @include media(840px){
+          @include media(840px) {
             right: -30%;
           }
-          @include media(375px){
+          @include media(375px) {
             top: -40px;
           }
           .l {
@@ -237,13 +239,13 @@
             position: absolute;
             right: 80px;
             top: -200px;
-            @include media(960px){
+            @include media(960px) {
               width: 500px;
               height: 400px;
               right: 40px;
               top: -100px;
             }
-            @include media(375px){
+            @include media(375px) {
               width: 257.05px;
               height: 170.84px;
             }
@@ -255,7 +257,7 @@
             top: -120px;
             right: 30px;
             transform: rotateY(180deg);
-            @include media(960px){
+            @include media(960px) {
               width: 500px;
               height: auto;
               right: 50px;

@@ -43,9 +43,10 @@ $sc-font: "Arima";
   transition: all 0.3s ease;
 }
 html {
-  user-select: none;
   height: 100%;
+    user-select: none;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   width: 100%;
@@ -62,7 +63,6 @@ button {
   border: none;
   cursor: pointer;
 }
-
 .container {
   width: 100%;
   max-width: 1240px;
