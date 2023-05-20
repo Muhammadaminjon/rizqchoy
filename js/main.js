@@ -4,7 +4,6 @@ btn.addEventListener("click", () => {
   body.classList.toggle("dark");
 });
 
-
 // main products section swiper js
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
@@ -25,7 +24,6 @@ const mySwiper = new Swiper(".mySwiper", {
     prevEl: ".comment-prev",
   },
 });
-
 
 const scroll = document.querySelector(".bg-circle");
 const nav = document.getElementById("navbar");
