@@ -45,7 +45,6 @@ html {
   // height: 100%;
   user-select: none;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 body {
   width: 100%;
@@ -53,6 +52,7 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 main {
   flex-grow: 1;

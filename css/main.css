@@ -37,7 +37,6 @@ html {
       -ms-user-select: none;
           user-select: none;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -51,6 +50,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-x: hidden;
 }
 
 main {
