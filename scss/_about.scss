@@ -1,37 +1,25 @@
 .header2 {
   background: var(--bg-color);
-  padding: 28px 0 73px 0;
+  padding: 28px 0;
 }
 .guarantee2 {
+  position: relative;
+  padding-bottom: 300px;
   width: 100%;
-  height: 600px;
+  height: auto;
   background: var(--bg-color);
+  @include media(800px) {
+    padding-bottom: 260px;
+  }
+  @include media(400px) {
+    padding-bottom: 140px;
+  }
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  &-images-wrapper {
-    position: relative;
-    .frame {
-      width: 527px;
-      height: 464px;
-      background: $sc-bg-color;
-      border-radius: 59px 0px;
-    }
-    .barg-2 {
-      position: absolute;
-      top: -305px;
-      right: -280px;
-      left: auto;
-      transform: rotateY(180deg);
-    }
-    .cup {
-      position: absolute;
-      top: 30px;
-      left: 20px;
-      width: 527px;
-      height: 464px;
+    @include media(1000px) {
+      flex-direction: column-reverse;
     }
   }
   &-text-wrapper {
@@ -44,30 +32,80 @@
       font-family: $sc-font;
       font-weight: 700;
       font-size: 200px;
-      line-height: 1;
       color: $pr-color;
+      @include media(400px) {
+        font-size: 150px;
+        line-height: 1;
+      }
     }
     &-sub-title {
       font-family: $pr-font;
       font-weight: 400;
       font-size: 50px;
       line-height: 60px;
-      color: $third-text-color;
+      color: var(--third-text-color);
       margin-left: 16px;
       margin-bottom: 40px;
+      @include media(400px) {
+        font-size: 40px;
+        line-height: 48px;
+      }
     }
     .text-frame {
+      width: 100%;
       display: flex;
       flex-direction: column;
       font-family: $pr-font;
       font-weight: 400;
       font-size: 20px;
       line-height: 24px;
-      color: $third-text-color;
+      color: var(--third-text-color);
       margin-left: 16px;
+      gap: 12px;
+      @include media(400px) {
+        max-width: 334px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22.4px;
+      }
       .text {
-        width: 100%;
-        // max-width: 549px;
+      }
+    }
+  }
+  .cup-w {
+    @include media(1000px) {
+      margin-bottom: 500px;
+    }
+    @include media(800px) {
+      margin-bottom: 760px;
+    }
+    @include media(600px) {
+      margin-bottom: 360px;
+    }
+    .cup {
+      position: absolute;
+      padding: 0 20px;
+      top: -100px;
+      right: 0;
+      @include media(800px) {
+        width: 808.43px;
+        height: auto;
+        // top: 0;
+        left: 0;
+      }
+      @include media(600px) {
+        width: 605.43px;
+        height: 502.91px;
+        top: -100px;
+        left: auto;
+        right: -130px;
+      }
+      @include media(400px) {
+        top: -80px;
+        left: auto;
+        right: -110px;
+        width: 505.43px;
+        height: 402.91px;
       }
     }
   }
@@ -88,6 +126,16 @@
       line-height: 82px;
       color: $pr-color;
     }
+    @include media(400px) {
+      max-width: 314px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 37px;
+      span {
+        font-size: 30px;
+        line-height: 37px;
+      }
+    }
   }
   &-wrapper {
     width: 100%;
@@ -99,20 +147,42 @@
   }
   &-frame {
     width: 100%;
-    max-width: 1202px;
+    max-width: 1200px;
     display: flex;
     .list {
       width: 100%;
       display: flex;
       gap: 80px;
+      margin: 0 auto;
+      @include media(1200px) {
+        gap: 50px;
+      }
+      @include media(1000px) {
+        gap: 30px;
+      }
+      @include media(800px) {
+        flex-direction: column;
+        gap: 24px;
+      }
       .item-wrapper {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        margin: 0 auto;
         gap: 80px;
+        @include media(1200px) {
+          gap: 50px;
+        }
+        @include media(1000px) {
+          gap: 30px;
+        }
+        @include media(400px) {
+          gap: 43px;
+        }
       }
       .item {
-        width: 168px;
+        width: 100%;
+        max-width: 168px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -130,7 +200,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          background-color: $sc-bg-color;
+          background-color: var(--sc-color);
           border-radius: 24px 0px;
           margin-bottom: 20px;
           padding: 0 22.5px;
@@ -139,6 +209,9 @@
           font-size: 50px;
           line-height: 75px;
           color: $pr-color;
+          svg path {
+            fill: var(--fill-color);
+          }
           .o {
             position: absolute;
             width: 50px;
@@ -160,6 +233,10 @@
             font-family: $sc-font;
             font-weight: 700;
             color: $pr-color;
+          }
+          @include media(1000px) {
+            font-size: 18px;
+            line-height: 22.5px;
           }
         }
       }

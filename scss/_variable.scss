@@ -10,8 +10,12 @@ $pr-font: "Display";
 $sc-font: "Arima";
 
 :root {
+  --fill-color: #158527;
+  --pr-color: #f8fbda;
   --bg-color: #fff;
   --text-color: #000;
+  --pr-bg-color: #fafaf9;
+  --sr-bg-color: #f3f3ee;
   --kir: url(../images/png/kir.png);
   --sc-color: #f8fbda;
   --third-text-color: #444939;
@@ -19,9 +23,13 @@ $sc-font: "Arima";
   --mode-img: url(../images/svg/Moon.svg);
 }
 .dark {
+  --fill-color: #fff;
+  --pr-color: #158527;
   --bg-color: #162318;
   --text-color: #fff;
   --kir: #1c2c1f;
+  --pr-bg-color: #1c2c1f;
+  --sr-bg-color: #293d2d;
   --sc-color: #293d2d;
   --third-text-color: #fff;
   --mode: #f8fbda;
@@ -32,7 +40,9 @@ $sc-font: "Arima";
     @content;
   }
 }
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -45,6 +55,7 @@ html {
   // height: 100%;
   user-select: none;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   width: 100%;
@@ -52,7 +63,6 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
 }
 main {
   flex-grow: 1;
@@ -121,7 +131,6 @@ button {
   }
 }
 .bg-circle {
-  display: none;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -134,7 +143,7 @@ button {
   .circle {
     position: absolute;
     top: -250px;
-    background: var(--sc-color);
+    background: var(--pr-color);
     width: 1300px;
     height: 1700px;
     border-radius: 35%;
