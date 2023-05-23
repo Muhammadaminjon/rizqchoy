@@ -2115,6 +2115,7 @@ button {
 }
 
 .header2 {
+  overflow-x: hidden;
   background: var(--bg-color);
   padding: 28px 0;
 }
